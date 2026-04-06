@@ -15,7 +15,7 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install --upgrade pip
-          pip install buildozer kivy
+          pip install buildozer kivy pyTelegramBotAPI requests
 
       - name: Build with Buildozer
         run: |
@@ -28,4 +28,3 @@ jobs:
         with:
           name: my-bot-apk
           path: bin/*.apk
-          
